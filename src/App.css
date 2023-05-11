@@ -36,3 +36,70 @@
     transform: rotate(360deg);
   }
 }
+
+
+.loading-overload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.211); 
+  z-index: 10000; 
+  cursor: not-allowed; 
+}
+.loading-text{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9998; 
+  color:red;
+  font-weight: bolder;
+  font-size: large;
+}
+.loading-animationSVG{
+  animation: loading-animationSVG 4s linear infinite;
+  top: 40%;
+  left: 50%;
+  position: fixed;
+  z-index: 9999;
+  opacity: 0.6; 
+}
+@keyframes loading-animationSVG {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
+.navbar-context-field{
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-filed-UI-content{
+  color: white;
+  border-style: double;
+  border-color: white;
+  border-radius: 5px;
+  padding: 1em;
+  align-items: center;
+  
+}
+
+.navbar-container{
+max-height: "120px";
+justify-content: center;
+display: flex;
+
+}
+.doctor-cards-body{
+  display:"flex";
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
