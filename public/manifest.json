@@ -1,6 +1,6 @@
 {
-  "short_name": "dreamguruu",
-  "name": "Dreamguru rüya analiz platformu",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

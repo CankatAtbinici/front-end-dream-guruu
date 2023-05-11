@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "cursive", 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,30 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.enlarge-on-hover {
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.enlarge-on-hover:hover {
-  transform: scale(1.1);
-}
-
-.configre-size {
-  width: 20%;
-}
-.dream-answer-container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-.dream-diary-container{
-  display: flex;
-  justify-content: center;
-}
-.pointer{
-  cursor:pointer
-}
-
-

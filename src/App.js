@@ -1,42 +1,24 @@
-import "./App.css";
-import MainPage from './pages/main/Index'
-import UserDataContextProvider from "./context/UserDataContext";
-import LoadingContextProvider from "./context/Loading";
-import Navbar from "./components/navbar/Index";
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
-import Login from './pages/Login/Index';
-import UserUXContextProvider from "./context/UserUXContext";
-import Layout from "./components/layout/Layout";
-import Profile from  "./pages/profile/Index";
-
-
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-
-
-
-
-
   return (
-    <LoadingContextProvider>
-      <UserUXContextProvider>
-        <UserDataContextProvider>
-          <BrowserRouter>
-          <Layout>
-            <Routes>
-              <Route exact  path="/"  element={<MainPage/>} />
-              <Route path="/login" element={<Login/>} />
-              <Route path="/profile" element={<Profile/>} />
-            </Routes>
-            </Layout>
-          </BrowserRouter>
-      </UserDataContextProvider>
-      </UserUXContextProvider>
-    </LoadingContextProvider>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
